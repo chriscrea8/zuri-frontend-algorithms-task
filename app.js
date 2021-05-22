@@ -1,16 +1,19 @@
 //Test 1: convertFahrToCelsius
 
 var input = prompt('Please enter a number', 'defaultAnswer');
-console.log(input);
+
+var displayResult = document.querySelector('.celsiusResult');
 
 function convertFahrToCelsius(Fahr) {
     if ((isNaN(Fahr))) {
         return `${Fahr} is not a valid number but a/an ${typeof(Fahr)}.`
     } else {
         let C = (Fahr - 32) * 5 / 9;
-        return C.toFixed(4);
+        return C.toFixed(4) + " fahr";
     }
 }
+
+displayResult.innerText = convertFahrToCelsius(input) ;
 
 console.log(convertFahrToCelsius(input));
 
