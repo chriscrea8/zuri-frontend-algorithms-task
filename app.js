@@ -1,5 +1,8 @@
 //Test 1: convertFahrToCelsius
 
+var input = prompt('Please enter a number', 'defaultAnswer');
+console.log(input);
+
 function convertFahrToCelsius(Fahr) {
     if ((isNaN(Fahr))) {
         return `${Fahr} is not a valid number but a/an ${typeof(Fahr)}.`
@@ -9,7 +12,7 @@ function convertFahrToCelsius(Fahr) {
     }
 }
 
-console.log(convertFahrToCelsius(30));
+console.log(convertFahrToCelsius(input));
 
 
 //Test 2: checkYuGiOh
